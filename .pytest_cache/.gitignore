@@ -1,0 +1,42 @@
+# Virtual Environment
+
+venv/
+.env
+
+# Python
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# Pytest
+
+.pytest_cache/
+
+# Reports
+
+reports/
+allure-results/
+
+# IDE
+
+.vscode/
+.idea/
+
+# OS
+
+.DS_Store
+
+# Coverage
+
+.coverage
+htmlcov/
+
+# Logs
+
+*.log
+
+# Docker
+
+docker/*.log

@@ -1,6 +1,31 @@
-def test_payment_flow(apis):
-    response = apis["payment"].get_user(2)
+from services.payment_api import (
+    PaymentAPI
+)
 
-    print("Status →", response.status_code)
+def test_payment_flow():
+    api = (
+        PaymentAPI()
+    )
 
-    assert response.status_code == 200
+    response = (
+        api.process(
+            "demo_token",
+            {
+                "amount": 500
+            }
+        )
+    )
+
+    assert (
+        response.status_code
+        == 200
+    )
+
+    body = (
+        response.json()
+    )
+
+    assert (
+        body["success"]
+        is True
+)

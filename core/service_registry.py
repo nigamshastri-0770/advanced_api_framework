@@ -1,12 +1,37 @@
+from core.config_reader import (
+ConfigReader
+)
+
 class ServiceRegistry:
 
-    SERVICES = {
-        "auth": "/auth",
-        "user": "/users",
-        "order": "/orders",
-        "payment": "/payments"
-    }
-
     @classmethod
-    def get(cls, service):
-        return cls.SERVICES[service]
+    def get_url(
+        cls,
+        service
+    ):
+
+        config = (
+            ConfigReader.load()
+        )
+
+        urls = (
+            config.get(
+                "base_urls",
+                {}
+            )
+        )
+
+        url = (
+            urls.get(
+                service
+            )
+        )
+
+        if not url:
+
+            raise ValueError(
+                f"No URL configured for {service}"
+            )
+
+        return url.rstrip("/")
+

@@ -1,11 +1,47 @@
-def test_microservices_flow(apis):
-    login = apis["auth"].login(
-        "eve.holt@reqres.in",
-        "cityslicka"
+from services.auth_api import (
+AuthAPI
+)
+
+from services.order_api import (
+OrderAPI
+)
+
+from services.payment_api import (
+PaymentAPI
+)
+
+def test_microservices_flow():
+    token = (
+        AuthAPI()
+        .login(
+            "demo@test.com",
+            "123"
+        )
+        .json()["token"]
     )
 
-    assert login.status_code == 200
+    order = (
+        OrderAPI()
+        .create(
+            token,
+            {}
+        )
+    )
 
-    users = apis["payment"].get_user(2)
+    assert (
+        order.status_code
+        == 200
+    )
 
-    assert users.status_code == 200
+    payment = (
+        PaymentAPI()
+        .process(
+            token,
+            {}
+        )
+    )
+
+    assert (
+        payment.status_code
+        == 200
+    )

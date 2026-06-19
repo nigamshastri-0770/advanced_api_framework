@@ -3,16 +3,25 @@ class RequestBuilder:
     @staticmethod
     def build(
         token=None,
-        body=None,
-        params=None
+        payload=None,
+        params=None,
+        headers=None
     ):
-        headers = {}
+
+        req_headers = {
+            "Content-Type": "application/json"
+        }
+
+        if headers:
+            req_headers.update(headers)
 
         if token:
-            headers["Authorization"] = f"Bearer {token}"
+            req_headers[
+                "Authorization"
+            ] = f"Bearer {token}"
 
         return {
-            "headers": headers,
-            "json": body,
+            "headers": req_headers,
+            "json": payload,
             "params": params
         }

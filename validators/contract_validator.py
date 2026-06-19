@@ -1,8 +1,13 @@
-from openapi_core import validate_response
-
+from openapi_core import validate_response # type: ignore
 
 class ContractValidator:
 
     @staticmethod
-    def validate(resp):
-        validate_response(resp)
+    def validate(
+        response
+    ):
+        validate_response(
+            response
+        )
+
+        return True

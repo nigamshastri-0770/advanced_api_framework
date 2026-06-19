@@ -1,7 +1,15 @@
-def validate_booking_exists(db, booking_id):
+class DBValidator:
 
-    result = db.execute(
-        f"SELECT * FROM bookings WHERE id={booking_id}"
-    )
+    @staticmethod
+    def compare(
+        api_data,
+        db_data
+    ):
+        assert (
+            api_data
+            == db_data
+        ), (
+            "DB Validation Failed"
+        )
 
-    assert len(result) > 0, "Booking not found in DB"
+        return True

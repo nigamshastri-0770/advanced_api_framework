@@ -1,8 +1,15 @@
-import jsonschema
+from jsonschema import validate
 
-
-class DBValidator:
-
+class SchemaValidator:
     @staticmethod
-    def compare(api, db):
-        assert api == db
+    def validate(
+        response,
+        schema
+    ):
+
+        validate(
+            response.json(),
+            schema
+        )
+
+        return True

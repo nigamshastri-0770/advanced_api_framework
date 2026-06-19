@@ -1,42 +1,87 @@
+import os
 import yaml
 
-
 class ConfigReader:
+    _cache = None
 
-    def __init__(self):
+    @classmethod
+    def load(cls):
 
-        self.config = (
-            self.load(
-                "config/config.yaml"
-            )
+        if cls._cache:
+            return cls._cache
+
+        env = os.getenv(
+            "ENV",
+            "dev"
         )
 
-    def load(
-        self,
-        path
-    ):
+        config = {}
 
-        with open(
-            path,
-            "r"
-        ) as file:
+        try:
 
-            return yaml.safe_load(
-                file
-            )
+            if os.path.exists(
+                "config/config.yaml"
+            ):
 
+                with open(
+                    "config/config.yaml",
+                    "r"
+                ) as f:
+
+                    loaded = yaml.safe_load(f)
+
+                    if loaded:
+                        config.update(
+                            loaded
+                        )
+
+        except Exception:
+            pass
+
+
+        env_file = (
+            f"config/{env}.yaml"
+        )
+
+        try:
+
+            if os.path.exists(
+                env_file
+            ):
+
+                with open(
+                    env_file,
+                    "r"
+                ) as f:
+
+                    loaded = yaml.safe_load(f)
+
+                    if loaded:
+                        config.update(
+                            loaded
+                        )
+
+        except Exception:
+            pass
+
+
+        cls._cache = config
+
+        return config
+
+    @classmethod
     def get(
-        self,
+        cls,
         key,
         default=None
     ):
 
-        return self.config.get(
-            key,
-            default
+        return (
+            cls
+            .load()
+            .get(
+                key,
+                default
+            )
         )
 
-
-config = (
-    ConfigReader()
-)

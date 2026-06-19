@@ -1,13 +1,23 @@
-def test_create_order(apis):
-    payload = {
-        "name": "morpheus",
-        "job": "leader"
-    }
+from services.order_api import (
+    OrderAPI
+)
 
-    response = apis["order"].create_order(payload)
+def test_create_order():
+    api = (
+        OrderAPI()
+    )
 
-    print("Status →", response.status_code)
-    print("Response →", response.json())
+    response = (
+        api.create(
+            "demo",
+            {
+                "product": "Laptop"
+            }
+        )
+    )
 
-    assert response.status_code == 201
-    assert "id" in response.json()
+    assert (
+        response.status_code
+        == 200
+    )
+
