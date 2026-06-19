@@ -3,7 +3,7 @@
 venv/
 .env
 
-# Python
+# Python Cache
 
 **pycache**/
 *.pyc
@@ -19,24 +19,29 @@ venv/
 reports/
 allure-results/
 
-# IDE
-
-.vscode/
-.idea/
-
-# OS
-
-.DS_Store
-
 # Coverage
 
 .coverage
 htmlcov/
 
+# IDE
+
+.vscode/
+.idea/
+
+# macOS
+
+.DS_Store
+
 # Logs
 
 *.log
 
-# Docker
+# Build
 
-docker/*.log
+dist/
+build/
+
+# Environment
+
+.env.local

@@ -1,6 +1,0 @@
-[
-  "tests/test_auth.py::test_auth_login",
-  "tests/test_e2e_flow.py::test_microservices_flow",
-  "tests/test_order.py::test_create_order",
-  "tests/test_payment.py::test_payment_flow"
-]
