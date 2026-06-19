@@ -1,13 +1,23 @@
-from openapi_core import validate_response # type: ignore
+# File: validators/contract_validator.py
+
+from jsonschema import validate
+
 
 class ContractValidator:
 
     @staticmethod
-    def validate(
-        response
+    def validate_response(
+        response,
+        schema
     ):
-        validate_response(
-            response
+
+        body = (
+            response.json()
+        )
+
+        validate(
+            instance=body,
+            schema=schema
         )
 
         return True

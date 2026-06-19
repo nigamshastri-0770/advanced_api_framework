@@ -1,15 +1,18 @@
-class DBValidator:
+# File: validators/db_validator.py
 
+class DBValidator:
     @staticmethod
-    def compare(
-        api_data,
-        db_data
+    def validate_equal(
+        api_value,
+        db_value
     ):
         assert (
-            api_data
-            == db_data
+            api_value
+            ==
+            db_value
         ), (
-            "DB Validation Failed"
+            f"Mismatch → "
+            f"API={api_value} "
+            f"DB={db_value}"
         )
 
-        return True

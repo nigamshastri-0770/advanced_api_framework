@@ -1,23 +1,39 @@
-from services.order_api import (
-    OrderAPI
+# File: tests/test_order.py
+
+from data.order_factory import (
+OrderFactory
 )
 
-def test_create_order():
-    api = (
-        OrderAPI()
+def test_create_order(
+    apis
+):
+    payload = (
+        OrderFactory
+        .booking()
     )
 
     response = (
-        api.create(
-            "demo",
-            {
-                "product": "Laptop"
-            }
+        apis["order"]
+        .create_order(
+            payload
         )
     )
 
     assert (
         response.status_code
-        == 200
+        in [
+            200,
+            201
+        ]
     )
 
+    body = (
+        response.json()
+    )
+
+    assert (
+        isinstance(
+            body,
+            dict
+        )
+    )

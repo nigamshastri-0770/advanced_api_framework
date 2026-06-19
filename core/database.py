@@ -1,25 +1,63 @@
-import psycopg2
+# File: core/database.py
 
+import sqlite3
 
 class Database:
-
-    def __init__(self, config):
-
-        self.conn = psycopg2.connect(
-            host=config["host"],
-            port=config["port"],
-            database=config["name"],
-            user=config["user"],
-            password=config["password"]
+    def __init__(
+        self,
+        db_path="test.db"
+    ):
+        self.connection = (
+            sqlite3.connect(
+                db_path
+            )
         )
 
-        self.cursor = self.conn.cursor()
+        self.cursor = (
+            self.connection.cursor()
+        )
 
-    def execute(self, query):
+    def execute(
+        self,
+        query,
+        params=None
+    ):
+        self.cursor.execute(
+            query,
+            params or ()
+        )
 
-        self.cursor.execute(query)
+        self.connection.commit()
 
-        try:
-            return self.cursor.fetchall()
-        except:
-            return []
+    def fetch_one(
+        self,
+        query,
+        params=None
+    ):
+        self.cursor.execute(
+            query,
+            params or ()
+        )
+
+        return (
+            self.cursor.fetchone()
+        )
+
+    def fetch_all(
+        self,
+        query,
+        params=None
+    ):
+        self.cursor.execute(
+            query,
+            params or ()
+        )
+
+        return (
+            self.cursor.fetchall()
+        )
+
+    def close(
+        self
+    ):
+        self.connection.close()

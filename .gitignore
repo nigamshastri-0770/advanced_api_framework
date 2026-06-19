@@ -1,47 +1,29 @@
-# Virtual Environment
+# File: .gitignore
 
-venv/
-.env
-
-# Python Cache
+# Python cache
 
 **pycache**/
 *.pyc
-*.pyo
-*.pyd
 
-# Pytest
+# pytest
 
 .pytest_cache/
 
-# Reports
+# reports
 
 reports/
 allure-results/
+report.html
 
-# Coverage
+# environment
 
-.coverage
-htmlcov/
+.env
+
+# OS files
+
+.DS_Store
 
 # IDE
 
 .vscode/
 .idea/
-
-# macOS
-
-.DS_Store
-
-# Logs
-
-*.log
-
-# Build
-
-dist/
-build/
-
-# Environment
-
-.env.local

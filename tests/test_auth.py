@@ -1,15 +1,26 @@
-from services.auth_api import AuthAPI
-from validators.status_validator import StatusValidator
+# File: tests/test_auth.py
 
-def test_auth_login():
-    api = AuthAPI()
-
-    response = api.login(
-        "demo@test.com",
-        "Password123"
+def test_auth_login(
+apis
+):
+    response = (
+        apis["auth"]
+        .login(
+            "eve.holt@reqres.in",
+            "cityslicka"
+        )
     )
 
-    StatusValidator.validate(
-        response,
-        200
+    assert (
+        response.status_code
+        == 200
+    )
+
+    body = (
+        response.json()
+    )
+
+    assert (
+        "token"
+        in body
     )

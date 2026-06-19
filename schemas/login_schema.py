@@ -1,41 +1,38 @@
+# File: schemas/login_schema.py
+
 LOGIN_SCHEMA = {
 
+    "type": "object",
 
-"type": "object",
+    "properties": {
 
-"properties": {
-
-    "token": {
-        "type": "string"
-    },
-
-    "user": {
-
-        "type": "object",
-
-        "properties": {
-
-            "id": {
-                "type": "integer"
-            },
-
-            "email": {
-                "type": "string"
-            }
-
+        "token": {
+            "type": "string"
         },
 
-        "required": [
-            "id",
-            "email"
-        ]
-    }
+        "_meta": {
 
-},
+            "type": "object",
 
-"required": [
-    "token",
-    "user"
-]
+            "properties": {
 
+                "powered_by": {
+                    "type": "string"
+                },
+
+                "docs_url": {
+                    "type": "string"
+                },
+
+                "message": {
+                    "type": "string"
+                }
+
+            }
+        }
+    },
+
+    "required": [
+        "token"
+    ]
 }
