@@ -1,0 +1,45 @@
+name: prod
+
+base_urls:
+
+  auth:
+    https://reqres.in
+
+  user:
+    https://jsonplaceholder.typicode.com
+
+  order:
+    https://restful-booker.herokuapp.com
+
+  payment:
+    https://httpbin.org
+
+  notification:
+    https://httpbin.org
+
+
+database:
+
+  host: prod-db
+
+  port: 5432
+
+  name: api_prod
+
+  user: api_user
+
+  password: secret
+
+
+execution:
+
+  retries: 1
+
+  timeout: 10
+
+
+reporting:
+
+  html: true
+
+  allure: true

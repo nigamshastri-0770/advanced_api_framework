@@ -1,0 +1,85 @@
+# ---------------------------------
+# ENVIRONMENT
+# ---------------------------------
+
+name: dev
+
+
+# ---------------------------------
+# BASE URLS
+# ---------------------------------
+
+base_urls:
+
+  auth:
+    https://reqres.in
+
+  user:
+    https://jsonplaceholder.typicode.com
+
+  order:
+    https://restful-booker.herokuapp.com
+
+  payment:
+    https://httpbin.org
+
+  notification:
+    https://httpbin.org
+
+
+# ---------------------------------
+# DATABASE
+# ---------------------------------
+
+database:
+
+  host: localhost
+
+  port: 5432
+
+  name: api
+
+  user: macbookpro
+
+  password: ""
+
+
+# ---------------------------------
+# EXECUTION
+# ---------------------------------
+
+execution:
+
+  retries: 3
+
+  timeout: 30
+
+
+# ---------------------------------
+# REPORTING
+# ---------------------------------
+
+reporting:
+
+  html: true
+
+  allure: true
+
+
+# ---------------------------------
+# TEST DATA
+# ---------------------------------
+
+test_data:
+
+  firstname: Nigam
+
+  lastname: Shastri
+
+  totalprice: 100
+
+  depositpaid: true
+
+  checkin: "2026-06-18"
+
+  checkout: "2026-06-20"

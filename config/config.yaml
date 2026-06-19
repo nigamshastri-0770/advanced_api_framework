@@ -1,0 +1,101 @@
+# ---------------------------------
+# ACTIVE ENVIRONMENT
+# ---------------------------------
+
+environment: dev
+
+
+# ---------------------------------
+# TIMEOUT
+# ---------------------------------
+
+timeout:
+
+  connect: 10
+
+  read: 30
+
+
+# ---------------------------------
+# RETRY
+# ---------------------------------
+
+retry:
+
+  attempts: 3
+
+  wait_seconds: 2
+
+
+# ---------------------------------
+# REPORTS
+# ---------------------------------
+
+reports:
+
+  html:
+
+    enabled: true
+
+    path: reports/report.html
+
+  allure:
+
+    enabled: true
+
+    path: reports/allure
+
+
+# ---------------------------------
+# DATABASE
+# ---------------------------------
+
+database:
+
+  host: localhost
+
+  port: 5432
+
+  name: api
+
+  user: macbookpro
+
+  password: ""
+
+
+# ---------------------------------
+# EXECUTION
+# ---------------------------------
+
+execution:
+
+  parallel: false
+
+  workers: 4
+
+
+# ---------------------------------
+# SERVICES
+# ---------------------------------
+
+services:
+
+  auth:
+
+    enabled: true
+
+  user:
+
+    enabled: true
+
+  order:
+
+    enabled: true
+
+  payment:
+
+    enabled: true
+
+  notification:
+
+    enabled: truegive me more files 
