@@ -1,28 +1,25 @@
 import pytest
-import time
-from api.auth_api import AuthAPI
-from api.order_api import OrderAPI
-from api.payment_api import PaymentAPI
 
-API_KEY = "free_user_3EqwNfJjHbaSI4VWRBchJllgjn9"
+from core.context import Context
 
-
-@pytest.fixture(scope="session")
-def api_base_url():
-    return "https://reqres.in"
+from services.auth_api import AuthAPI
+from services.user_api import UserAPI
+from services.order_api import OrderAPI
+from services.payment_api import PaymentAPI
+from services.notification_api import NotificationAPI
 
 
-@pytest.fixture(scope="session")
-def api_key():
-    return API_KEY
+@pytest.fixture
+def ctx():
+    return Context()
 
 
-@pytest.fixture(scope="session")
-def apis(api_base_url, api_key):
-    time.sleep(0.2)  # small throttle
-
+@pytest.fixture
+def apis():
     return {
-        "auth": AuthAPI(api_base_url, api_key),
-        "order": OrderAPI(api_base_url, api_key),
-        "payment": PaymentAPI(api_base_url, api_key),
+        "auth": AuthAPI(),
+        "user": UserAPI(),
+        "order": OrderAPI(),
+        "payment": PaymentAPI(),
+        "notification": NotificationAPI()
     }

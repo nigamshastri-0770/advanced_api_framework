@@ -350,3 +350,11 @@ status=200
 2026-06-23 12:18:32,900 | ERROR | Attempt 2: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
 2026-06-23 12:18:36,904 | ERROR | Attempt 3: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
 2026-06-23 12:18:37,236 | INFO | POST https://reqres.in/api/login → 200
+2026-06-24 09:17:55,900 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-24 09:17:56,861 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-24 09:17:57,798 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-24 09:17:59,055 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-24 09:17:59,976 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-24 09:18:00,016 | ERROR | Attempt 1: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-24 09:18:02,022 | ERROR | Attempt 2: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-24 09:18:06,026 | ERROR | Attempt 3: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
