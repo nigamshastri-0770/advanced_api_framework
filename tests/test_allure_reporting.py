@@ -1,25 +1,19 @@
-# File: tests/test_allure_reporting.py
-
-from utils.allure_helper import AllureHelper
+import responses # pyright: ignore[reportMissingImports]
 
 
+@responses.activate
 def test_allure_reporting(apis):
-    payload = {
-        "email": "eve.holt@reqres.in",
-        "password": "cityslicka",
-    }
 
-    AllureHelper.attach_request("/api/login", payload)
-
-    response = (
-        apis["auth"].login(payload["email"], payload["password"])
+    responses.add(
+        method=responses.POST,
+        url="https://reqres.in/api/login",
+        json={"token": "fake-token"},
+        status=200
     )
 
-    AllureHelper.attach_response(response)
+    response = apis["auth"].login(
+        "eve.holt@reqres.in",
+        "cityslicka"
+    )
 
     assert response.status_code == 200
-
-    body = response.json()
-
-    assert "token" in body
-

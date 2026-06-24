@@ -1,0 +1,352 @@
+2026-06-22 14:56:46,627 | INFO | 
+POST
+https://httpbin.org/api/login
+status=404
+
+2026-06-22 14:56:51,225 | INFO | 
+POST
+https://httpbin.org/api/login
+status=404
+
+2026-06-22 14:56:52,681 | INFO | 
+POST
+https://httpbin.org/api/users
+status=404
+
+2026-06-22 14:56:54,024 | INFO | 
+POST
+https://httpbin.org/api/users
+status=404
+
+2026-06-22 14:56:55,410 | INFO | 
+POST
+https://httpbin.org/api/users
+status=404
+
+2026-06-22 14:56:55,439 | ERROR | HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 14:56:57,447 | ERROR | HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 14:57:01,454 | ERROR | HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 15:05:49,636 | INFO | 
+POST
+https://httpbin.org/api/login
+status=503
+
+2026-06-22 15:05:55,575 | INFO | 
+POST
+https://httpbin.org/api/login
+status=503
+
+2026-06-22 15:06:00,480 | INFO | 
+POST
+https://httpbin.org/api/login
+status=503
+
+2026-06-22 15:06:09,391 | INFO | 
+POST
+https://httpbin.org/api/login
+status=503
+
+2026-06-22 15:06:12,341 | INFO | 
+POST
+https://httpbin.org/api/login
+status=503
+
+2026-06-22 15:06:20,493 | INFO | 
+POST
+https://httpbin.org/api/login
+status=503
+
+2026-06-22 15:06:29,605 | INFO | 
+POST
+https://httpbin.org/api/users
+status=503
+
+2026-06-22 15:06:32,700 | INFO | 
+POST
+https://httpbin.org/api/users
+status=503
+
+2026-06-22 15:06:40,762 | INFO | 
+POST
+https://httpbin.org/api/users
+status=404
+
+2026-06-22 15:06:42,772 | INFO | 
+POST
+https://httpbin.org/api/users
+status=404
+
+2026-06-22 15:06:53,468 | ERROR | HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-22 15:06:56,732 | INFO | 
+POST
+https://httpbin.org/api/users
+status=404
+
+2026-06-22 15:06:57,004 | ERROR | HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 15:06:59,011 | ERROR | HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 15:07:03,015 | ERROR | HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 15:13:24,037 | INFO | 
+POST
+https://reqres.in/api/login
+status=200
+
+2026-06-22 15:13:29,467 | INFO | 
+POST
+https://reqres.in/api/login
+status=200
+
+2026-06-22 15:13:29,472 | INFO | 
+POST
+https://reqres.in/api/login
+status=200
+
+2026-06-22 15:13:29,476 | INFO | 
+POST
+https://reqres.in/api/login
+status=200
+
+2026-06-22 15:14:00,937 | INFO | 
+POST
+https://reqres.in/api/login
+status=200
+
+2026-06-22 15:14:04,952 | INFO | 
+POST
+https://httpbin.org/api/login
+status=503
+
+2026-06-22 15:14:07,955 | INFO | 
+POST
+https://httpbin.org/api/login
+status=503
+
+2026-06-22 15:14:15,930 | INFO | 
+POST
+https://httpbin.org/api/login
+status=503
+
+2026-06-22 15:14:24,839 | INFO | 
+POST
+https://httpbin.org/api/login
+status=503
+
+2026-06-22 15:14:27,766 | INFO | 
+POST
+https://httpbin.org/api/login
+status=503
+
+2026-06-22 15:14:32,673 | INFO | 
+POST
+https://httpbin.org/api/login
+status=503
+
+2026-06-22 15:14:45,441 | INFO | 
+POST
+https://httpbin.org/api/users
+status=503
+
+2026-06-22 15:14:48,434 | INFO | 
+POST
+https://httpbin.org/api/users
+status=503
+
+2026-06-22 15:14:53,336 | INFO | 
+POST
+https://httpbin.org/api/users
+status=503
+
+2026-06-22 15:15:05,516 | INFO | 
+POST
+https://httpbin.org/api/users
+status=503
+
+2026-06-22 15:15:08,627 | INFO | 
+POST
+https://httpbin.org/api/users
+status=503
+
+2026-06-22 15:15:26,513 | ERROR | HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-22 15:15:37,454 | INFO | 
+POST
+https://httpbin.org/api/users
+status=404
+
+2026-06-22 15:15:37,461 | ERROR | HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 15:15:39,467 | ERROR | HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 15:15:43,471 | ERROR | HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 15:16:24,936 | INFO | 
+POST
+https://reqres.in/api/login
+status=200
+
+2026-06-22 15:40:10,503 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 15:40:10,509 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 15:40:10,513 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 15:40:44,040 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 15:40:48,054 | INFO | POST https://httpbin.org/api/login → 503
+2026-06-22 15:40:50,937 | INFO | POST https://httpbin.org/api/login → 503
+2026-06-22 15:40:59,320 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-22 15:41:00,843 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-22 15:41:01,973 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-22 15:41:03,213 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-22 15:41:04,755 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-22 15:41:04,825 | ERROR | Attempt 1: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 15:41:06,833 | ERROR | Attempt 2: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 15:41:10,839 | ERROR | Attempt 3: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 15:41:49,327 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:06:25,171 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:06:25,177 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:06:25,181 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:06:25,759 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:06:29,732 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-22 16:06:29,733 | ERROR | Attempt 1: 404 Client Error: NOT FOUND for url: https://httpbin.org/api/login
+2026-06-22 16:06:47,678 | ERROR | Attempt 2: HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-22 16:06:53,970 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-22 16:06:53,970 | ERROR | Attempt 3: 404 Client Error: NOT FOUND for url: https://httpbin.org/api/login
+2026-06-22 16:06:56,716 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-22 16:06:56,717 | ERROR | Attempt 1: 404 Client Error: NOT FOUND for url: https://httpbin.org/api/login
+2026-06-22 16:07:00,321 | INFO | POST https://httpbin.org/api/login → 503
+2026-06-22 16:07:00,322 | ERROR | Attempt 2: Server error 503
+2026-06-22 16:07:06,324 | INFO | POST https://httpbin.org/api/login → 503
+2026-06-22 16:07:06,325 | ERROR | Attempt 3: Server error 503
+2026-06-22 16:07:07,712 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:07:07,713 | ERROR | Attempt 1: Server error 503
+2026-06-22 16:07:11,180 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:07:11,180 | ERROR | Attempt 2: Server error 503
+2026-06-22 16:07:17,448 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:07:17,449 | ERROR | Attempt 3: Server error 503
+2026-06-22 16:07:20,086 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:07:20,087 | ERROR | Attempt 1: Server error 503
+2026-06-22 16:07:23,601 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:07:23,602 | ERROR | Attempt 2: Server error 503
+2026-06-22 16:07:28,987 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:07:28,988 | ERROR | Attempt 3: Server error 503
+2026-06-22 16:07:30,215 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:07:30,216 | ERROR | Attempt 1: Server error 503
+2026-06-22 16:07:33,570 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:07:33,572 | ERROR | Attempt 2: Server error 503
+2026-06-22 16:07:38,755 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:07:38,756 | ERROR | Attempt 3: Server error 503
+2026-06-22 16:07:39,111 | ERROR | Attempt 1: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 16:07:41,117 | ERROR | Attempt 2: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 16:07:45,121 | ERROR | Attempt 3: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 16:07:45,557 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:08:57,195 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:08:57,201 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:08:57,206 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:08:57,528 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:09:07,868 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-22 16:09:07,869 | ERROR | Attempt 1: 404 Client Error: NOT FOUND for url: https://httpbin.org/api/login
+2026-06-22 16:09:14,629 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-22 16:09:14,629 | ERROR | Attempt 2: 404 Client Error: NOT FOUND for url: https://httpbin.org/api/login
+2026-06-22 16:09:31,512 | ERROR | Attempt 3: HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-22 16:09:40,311 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-22 16:09:40,312 | ERROR | Attempt 1: 404 Client Error: NOT FOUND for url: https://httpbin.org/api/login
+2026-06-22 16:09:43,877 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-22 16:09:43,878 | ERROR | Attempt 2: 404 Client Error: NOT FOUND for url: https://httpbin.org/api/login
+2026-06-22 16:10:00,153 | ERROR | Attempt 3: HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-22 16:10:05,377 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-22 16:10:05,378 | ERROR | Attempt 1: 404 Client Error: NOT FOUND for url: https://httpbin.org/api/users
+2026-06-22 16:10:18,437 | ERROR | Attempt 2: HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-22 16:10:27,816 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:10:27,816 | ERROR | Attempt 3: Server error 503
+2026-06-22 16:10:30,535 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:10:30,537 | ERROR | Attempt 1: Server error 503
+2026-06-22 16:10:33,933 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:10:33,934 | ERROR | Attempt 2: Server error 503
+2026-06-22 16:10:40,912 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:10:40,912 | ERROR | Attempt 3: Server error 503
+2026-06-22 16:10:43,229 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:10:43,229 | ERROR | Attempt 1: Server error 503
+2026-06-22 16:10:46,614 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:10:46,615 | ERROR | Attempt 2: Server error 503
+2026-06-22 16:10:53,710 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:10:53,710 | ERROR | Attempt 3: Server error 503
+2026-06-22 16:10:53,721 | ERROR | Attempt 1: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 16:10:55,726 | ERROR | Attempt 2: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 16:10:59,732 | ERROR | Attempt 3: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 16:11:00,001 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:12:35,433 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:12:35,439 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:12:35,443 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:12:35,699 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:12:40,659 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-22 16:12:40,659 | ERROR | Attempt 1: RequestException - 404 Client Error: NOT FOUND for url: https://httpbin.org/api/login
+2026-06-22 16:12:46,223 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-22 16:12:46,224 | ERROR | Attempt 2: RequestException - 404 Client Error: NOT FOUND for url: https://httpbin.org/api/login
+2026-06-22 16:12:52,780 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-22 16:12:52,783 | ERROR | Attempt 3: RequestException - 404 Client Error: NOT FOUND for url: https://httpbin.org/api/login
+2026-06-22 16:13:03,944 | ERROR | Attempt 1: Timeout - HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-22 16:13:08,522 | INFO | POST https://httpbin.org/api/login → 503
+2026-06-22 16:13:08,522 | ERROR | Attempt 2: Server error 503
+2026-06-22 16:13:14,840 | INFO | POST https://httpbin.org/api/login → 503
+2026-06-22 16:13:14,841 | ERROR | Attempt 3: Server error 503
+2026-06-22 16:13:18,816 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:13:18,816 | ERROR | Attempt 1: Server error 503
+2026-06-22 16:13:22,168 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:13:22,169 | ERROR | Attempt 2: Server error 503
+2026-06-22 16:13:29,874 | INFO | POST https://httpbin.org/api/users → 503
+2026-06-22 16:13:29,875 | ERROR | Attempt 3: Server error 503
+2026-06-22 16:13:35,207 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:13:35,213 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:13:35,217 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:13:35,469 | INFO | POST https://reqres.in/api/login → 200
+2026-06-22 16:13:36,797 | INFO | POST https://httpbin.org/api/login → 503
+2026-06-22 16:13:40,422 | INFO | POST https://httpbin.org/api/login → 503
+2026-06-22 16:13:48,979 | INFO | POST https://httpbin.org/api/login → 503
+2026-06-22 16:13:59,248 | INFO | POST https://httpbin.org/api/login → 503
+2026-06-22 16:14:02,935 | INFO | POST https://httpbin.org/api/login → 503
+2026-06-22 16:14:10,721 | INFO | POST https://httpbin.org/api/login → 503
+2026-06-22 16:14:30,721 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-22 16:14:42,499 | ERROR | Attempt 1: HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-22 16:14:56,175 | ERROR | Attempt 2: HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-22 16:15:02,900 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-22 16:15:06,384 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-22 16:15:06,399 | ERROR | Attempt 1: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 16:15:08,409 | ERROR | Attempt 2: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 16:15:12,420 | ERROR | Attempt 3: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-22 16:15:20,804 | INFO | POST https://reqres.in/api/login → 200
+2026-06-23 12:11:57,657 | INFO | POST https://reqres.in/api/login → 200
+2026-06-23 12:11:57,663 | INFO | POST https://reqres.in/api/login → 200
+2026-06-23 12:11:57,668 | INFO | POST https://reqres.in/api/login → 200
+2026-06-23 12:11:58,816 | INFO | POST https://reqres.in/api/login → 200
+2026-06-23 12:12:07,905 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-23 12:12:09,888 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-23 12:12:12,096 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-23 12:12:22,878 | ERROR | Attempt 1: HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-23 12:12:35,827 | ERROR | Attempt 2: HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-23 12:12:52,348 | ERROR | Attempt 3: HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-23 12:12:55,453 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-23 12:12:55,562 | ERROR | Attempt 1: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-23 12:12:57,568 | ERROR | Attempt 2: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-23 12:13:01,575 | ERROR | Attempt 3: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-23 12:13:02,170 | INFO | POST https://reqres.in/api/login → 200
+2026-06-23 12:15:03,097 | INFO | POST https://reqres.in/api/login → 200
+2026-06-23 12:15:03,102 | INFO | POST https://reqres.in/api/login → 200
+2026-06-23 12:15:03,107 | INFO | POST https://reqres.in/api/login → 200
+2026-06-23 12:15:08,136 | INFO | POST https://reqres.in/api/login → 200
+2026-06-23 12:15:11,363 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-23 12:15:22,725 | ERROR | Attempt 1: HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-23 12:15:35,601 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-23 12:15:37,345 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-23 12:15:39,419 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-23 12:15:50,098 | ERROR | Attempt 1: HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-23 12:16:03,012 | ERROR | Attempt 2: HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-23 12:16:17,936 | ERROR | Attempt 3: HTTPSConnectionPool(host='httpbin.org', port=443): Read timed out. (read timeout=10)
+2026-06-23 12:16:18,260 | ERROR | Attempt 1: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-23 12:16:20,265 | ERROR | Attempt 2: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-23 12:16:24,272 | ERROR | Attempt 3: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-23 12:16:24,935 | INFO | POST https://reqres.in/api/login → 200
+2026-06-23 12:18:17,658 | INFO | POST https://reqres.in/api/login → 200
+2026-06-23 12:18:17,663 | INFO | POST https://reqres.in/api/login → 200
+2026-06-23 12:18:17,667 | INFO | POST https://reqres.in/api/login → 200
+2026-06-23 12:18:18,394 | INFO | POST https://reqres.in/api/login → 200
+2026-06-23 12:18:21,262 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-23 12:18:23,310 | INFO | POST https://httpbin.org/api/login → 404
+2026-06-23 12:18:25,157 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-23 12:18:26,790 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-23 12:18:30,887 | INFO | POST https://httpbin.org/api/users → 404
+2026-06-23 12:18:30,894 | ERROR | Attempt 1: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-23 12:18:32,900 | ERROR | Attempt 2: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-23 12:18:36,904 | ERROR | Attempt 3: HTTPSConnectionPool(host='invalid-host-123.com', port=443): Max retries exceeded with url: /api/users (Caused by NameResolutionError("HTTPSConnection(host='invalid-host-123.com', port=443): Failed to resolve 'invalid-host-123.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-06-23 12:18:37,236 | INFO | POST https://reqres.in/api/login → 200

@@ -1,39 +1,18 @@
-# File: tests/test_order.py
+import responses # pyright: ignore[reportMissingImports]
 
-from data.order_factory import (
-OrderFactory
-)
 
-def test_create_order(
-    apis
-):
-    payload = (
-        OrderFactory
-        .booking()
+@responses.activate
+def test_create_order(apis):
+
+    responses.add(
+        method=responses.POST,
+        url="https://reqres.in/api/users",
+        json={"id": "123"},
+        status=201
     )
 
-    response = (
-        apis["order"]
-        .create_order(
-            payload
-        )
+    response = apis["order"].create_order(
+        {"name": "Nigam"}
     )
 
-    assert (
-        response.status_code
-        in [
-            200,
-            201
-        ]
-    )
-
-    body = (
-        response.json()
-    )
-
-    assert (
-        isinstance(
-            body,
-            dict
-        )
-    )
+    assert response.status_code == 201

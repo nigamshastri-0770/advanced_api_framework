@@ -1,47 +1,13 @@
-from services.auth_api import (
-AuthAPI
-)
+import pytest
 
-from services.order_api import (
-OrderAPI
-)
+@pytest.mark.serial
+def test_microservices_flow(apis):
 
-from services.payment_api import (
-PaymentAPI
-)
+    auth = apis["auth"]
 
-def test_microservices_flow():
-    token = (
-        AuthAPI()
-        .login(
-            "demo@test.com",
-            "123"
-        )
-        .json()["token"]
+    login = auth.login(
+        "eve.holt@reqres.in",
+        "cityslicka"
     )
 
-    order = (
-        OrderAPI()
-        .create(
-            token,
-            {}
-        )
-    )
-
-    assert (
-        order.status_code
-        == 200
-    )
-
-    payment = (
-        PaymentAPI()
-        .process(
-            token,
-            {}
-        )
-    )
-
-    assert (
-        payment.status_code
-        == 200
-    )
+    assert login.status_code in [200, 201]

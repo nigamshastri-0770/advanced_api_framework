@@ -1,31 +1,33 @@
-from services.payment_api import (
-    PaymentAPI
-)
+from unittest.mock import patch
+from services.payment_api import PaymentAPI
 
-def test_payment_flow():
-    api = (
-        PaymentAPI()
-    )
 
-    response = (
-        api.process(
-            "demo_token",
-            {
-                "amount": 500
+@patch("services.payment_api.safe_request")
+def test_payment_flow(mock_request):
+
+    class MockResponse:
+        status_code = 200
+
+        def json(self):
+            return {
+                "success": True
             }
-        )
+
+    mock_request.return_value = MockResponse()
+
+    api = PaymentAPI(
+        base_url="https://fake-api.com",
+        api_key="demo_key"
     )
 
-    assert (
-        response.status_code
-        == 200
+    response = api.process(
+        {
+            "amount": 500
+        }
     )
 
-    body = (
-        response.json()
-    )
+    assert response.status_code == 200
 
-    assert (
-        body["success"]
-        is True
-)
+    body = response.json()
+
+    assert body["success"] is True

@@ -1,24 +1,21 @@
-import requests
-
-from services.gateway_api import (
-GatewayAPI
-)
+from core.retry_handler import safe_request
 
 class AuthAPI:
-    def login(
-        self,
-        email,
-        password
-    ):
-        return GatewayAPI.fake_response(
-            {
-                "token":
-                "demo_token",
+    def __init__(self, base_url, api_key):
+        self.base_url = base_url
+        self.headers = {"x-api-key": api_key}
 
-                "user": {
-                    "email":
-                    email
-                }
-            }
+    def login(self, email, password):
+        url = f"{self.base_url}/api/login"
+
+        payload = {
+            "email": email,
+            "password": password
+        }
+
+        return safe_request(
+            "POST",
+            url,
+            json=payload,
+            headers=self.headers
         )
-
